@@ -34,7 +34,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>https://raw.githubusercontent.com/nqobani/smashboard/master/Part1.Api/Part1.Api/Part1.Api.XML</DocumentationFile>
+    <DocumentationFile>Part1.Api.XML</DocumentationFile>
     <RegisterForComInterop>true</RegisterForComInterop>
     <NoWarn>1591</NoWarn>
   </PropertyGroup>
@@ -137,7 +137,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Swashbuckle.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cd1bb07a5ac7c7bc, processorArchitecture=MSIL">
-      <HintPath>..\packages\Swashbuckle.Core.5.4.0\lib\net40\Swashbuckle.Core.dll</HintPath>
+      <HintPath>..\packages\Swashbuckle.Core.5.5.3\lib\net40\Swashbuckle.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />

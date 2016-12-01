@@ -2,9 +2,10 @@ using System.Web.Http;
 using WebActivatorEx;
 using Part1.Api;
 using Swashbuckle.Application;
-using System;
+using System.IO;
+using System.Web;
 
-[assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
+[assembly: System.Web.PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
 namespace Part1.Api
 {
@@ -243,10 +244,9 @@ namespace Part1.Api
                         //c.EnableApiKeySupport("apiKey", "header");
                     });
         }
-
         private static string GetXmlCommentsPath()
         {
-            return System.String.Format(@"https://raw.githubusercontent.com/nqobani/smashboard/master/Part1.Api/Part1.Api/Part1.Api.XML");
+            return Path.Combine(HttpRuntime.AppDomainAppPath, "Part1.Api.XML");
         }
     }
 }
