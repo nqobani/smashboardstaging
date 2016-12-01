@@ -43,35 +43,35 @@ namespace Part1.Api
             var container = UnityConfig.RegisterComponents(app.GetDataProtectionProvider());
             ConfigureAuth(app);
 
-            var client = container.Resolve<IElasticClient>();
-            EnsureIndices(client, "smashboard-messages");
+            //var client = container.Resolve<IElasticClient>();
+            //EnsureIndices(client, "smashboard-messages");
         }
 
 
-        private static void EnsureIndices(IElasticClient client, string indexName)
-        {
-            var index = client.GetIndex(i => i.Index(indexName));
-            //if (index.Indices.Count == 0)
-            //{
-            //    var res = client.CreateIndex(ci => ci
-            //     .Index(indexName)
-            //     .AddMapping<EsValue>(m => m.MapFromAttributes()));
-            //    Debug.WriteLine(res.RequestInformation.Success);
+        //private static void EnsureIndices(IElasticClient client, string indexName)
+        //{
+        //    var index = client.GetIndex(i => i.Index(indexName));
+        //    //if (index.Indices.Count == 0)
+        //    //{
+        //    //    var res = client.CreateIndex(ci => ci
+        //    //     .Index(indexName)
+        //    //     .AddMapping<EsValue>(m => m.MapFromAttributes()));
+        //    //    Debug.WriteLine(res.RequestInformation.Success);
 
-            //Test
-            //var firstDoc = new EsValue
-            //{
-            //    Id = Guid.NewGuid(),
-            //    Value = "value0"
-            //};
+        //    //Test
+        //    //var firstDoc = new EsValue
+        //    //{
+        //    //    Id = Guid.NewGuid(),
+        //    //    Value = "value0"
+        //    //};
 
-            //var r = client.Index(firstDoc, v => v
-            //        .Index(indexName)
-            //        .Id(firstDoc.Id.ToString())
-            //        .Refresh());
+        //    //var r = client.Index(firstDoc, v => v
+        //    //        .Index(indexName)
+        //    //        .Id(firstDoc.Id.ToString())
+        //    //        .Refresh());
 
-            //Debug.WriteLine(r.RequestInformation.Success);
-        }
+        //    //Debug.WriteLine(r.RequestInformation.Success);
+        //}
     }
 }
 

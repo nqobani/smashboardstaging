@@ -34,7 +34,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Part1.Api.XML</DocumentationFile>
+    <DocumentationFile>https://raw.githubusercontent.com/nqobani/smashboard/master/Part1.Api/Part1.Api/Part1.Api.XML</DocumentationFile>
     <RegisterForComInterop>true</RegisterForComInterop>
     <NoWarn>1591</NoWarn>
   </PropertyGroup>
