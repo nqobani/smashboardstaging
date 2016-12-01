@@ -246,8 +246,8 @@ namespace Part1.Api
         }
         private static string GetXmlCommentsPath()
         {
-
-            return Path.Combine(HttpRuntime.AppDomainAppPath, @"bin\Part1.Api.XML");
+            string path = Path.Combine(HttpRuntime.AppDomainAppPath, @"bin\Part1.Api.XML");
+            return path;
         }
     }
 }
